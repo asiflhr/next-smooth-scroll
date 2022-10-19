@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex items-center justify-center flex-col">
+      <main className="flex items-center justify-center flex-col w-full">
         <h1 className="text-3xl font-bold flex items-center justify-center bg-opacity-90 fixed top-0 z-40 h-20 bg-teal-600 w-full">NextJS Smooth Scroll</h1>
         <Comp1 bgColor={"bg-rose-600"} ID={1}/>
         <Comp1 bgColor={"bg-violet-600"} ID={2}/>
