@@ -2,7 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
+import Comp1 from "../components/Comp1";
+
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -11,8 +14,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="">
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <main className="flex items-center justify-center flex-col">
+        <h1 className="text-3xl font-bold flex items-center justify-center bg-opacity-90 fixed top-0 z-40 h-20 bg-teal-600 w-full">NextJS Smooth Scroll</h1>
+        <Comp1 bgColor={"bg-rose-600"} ID={1}/>
+        <Comp1 bgColor={"bg-violet-600"} ID={2}/>
+        <Comp1 bgColor={"bg-lime-600"} ID={3}/>
+        <Comp1 bgColor={"bg-purple-600"} ID={4}/>
+        <Comp1 bgColor={"bg-yellow-500"} ID={5}/>
+        <Comp1 bgColor={"bg-slate-800"} ID={6}/>
+        <Comp1 bgColor={"bg-orange-600"} ID={7}/>
       </main>
     </div>
   );
